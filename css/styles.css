@@ -1,0 +1,220 @@
+/* ==========================================================================
+   🕯️ GLOW & WICK - 10/10 PREMIUM LUXURY PINTEREST STYLESHEET
+   ========================================================================== */
+
+/* --- 1. GLOBAL DESIGN SYSTEM & RESET --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFF5F5; /* Ultra soft, luxurious warm blush pink background */
+  color: #4A3E3D;            /* Deep espresso charcoal for highly readable text */
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  padding: 24px;
+}
+
+/* Elegant editorial typography scales */
+h1, h2, h3 {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  color: #4A1E2F;            /* Deep rich velvet plum wine accent */
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h1 { font-size: 2.8rem; margin-bottom: 0.5rem; }
+h2 { font-size: 1.6rem; font-weight: 400; color: #8A5E6B; margin-bottom: 1.5rem; }
+p { font-size: 1rem; color: #615251; }
+
+/* Premium Global Container */
+.content-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 50px 30px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(74, 30, 47, 0.03);
+}
+
+/* --- 2. LUXURY NAVIGATION BAR --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #4A1E2F; /* Deep velvet plum header background */
+  border-radius: 100px; /* Modern sleek pill shape */
+  margin-bottom: 40px;
+  box-shadow: 0 10px 30px rgba(74, 30, 47, 0.15);
+}
+
+.navbar .logo {
+  color: #FFF5F5;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: #FFF5F5;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  transition: all 0.3s ease;
+  opacity: 0.85;
+}
+
+.nav-links a:hover {
+  color: #F7C59F; /* Soft warm flickering gold glow on hover */
+  opacity: 1;
+}
+
+/* --- 3. HOMEPAGE HERO BANNER --- */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 120px 20px;
+  background-color: #ffffff;
+  border-radius: 32px;
+  margin-top: 20px;
+  border: 1px solid #FFE4E4;
+  box-shadow: 0 15px 50px rgba(74, 30, 47, 0.04);
+}
+
+.hero-content { max-width: 650px; }
+.hero-content p { font-size: 1.15rem; margin-bottom: 35px; line-height: 1.8; }
+
+/* Call To Action Brand Buttons */
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #6B3146, #4A1E2F);
+  color: #FFF5F5;
+  text-decoration: none;
+  padding: 14px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  letter-spacing: 0.02em;
+  box-shadow: 0 8px 25px rgba(74, 30, 47, 0.2);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(74, 30, 47, 0.3);
+  background: linear-gradient(135deg, #4A1E2F, #30101C);
+}
+
+/* --- 4. PINTEREST LUXURY PRODUCT GRID --- */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Clean columns layout */
+  gap: 40px;
+  padding: 30px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #ffffff;
+  border-radius: 28px;       /* Beautiful rounded Pinterest corners */
+  padding: 24px;
+  text-align: center;
+  border: 1px solid #FFEBEB;
+  box-shadow: 0 10px 30px rgba(74, 30, 47, 0.02);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.product-card:hover {
+  transform: translateY(-10px); /* Smooth elite lifting motion */
+  box-shadow: 0 20px 45px rgba(74, 30, 47, 0.08);
+  border-color: #F7D6D6;
+}
+
+.product-img-container {
+  width: 100%;
+  height: 340px; /* Perfectly uniform layout row matching sizes */
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 22px;
+  background-color: #FFF5F5;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crops images gracefully with no squishing */
+  transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05); /* Soft image zoom animation on card hover */
+}
+
+.product-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 6px;
+  color: #4A1E2F;
+}
+
+.price {
+  color: #8A5E6B;
+  font-weight: 600;
+  font-size: 1.15rem;
+  margin-bottom: 22px;
+}
+
+.product-card .cta-button {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 0.95rem;
+}
+
+/* --- 5. INTERACTIVE ENQUIRY FORM FIELDS --- */
+.enquiry-form { max-width: 500px; margin: 0 auto; }
+.form-group { margin-bottom: 24px; text-align: left; }
+.form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: #4A1E2F; font-size: 0.95rem; }
+
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #FFE4E4;
+  border-radius: 12px;
+  background-color: #FFFFAF;
+  background: #FFF5F5;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #4A3E3D;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  outline: none;
+  border-color: #8A5E6B;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 4px rgba(138, 94, 107, 0.1);
+}
+
+/* --- 6. RESPONSIVE DESIGN (Media Queries) --- */
+@media (max-width: 768px) {
+  body { padding: 16px; }
+  .navbar { flex-direction: column; gap: 20px; border-radius: 30px; padding: 20px; }
+  .nav-links { flex-direction: column; align-items: center; gap: 16px; }
+  h1 { font-size: 2.2rem; }
+  .hero-section { padding: 80px 20px; }
+  .product-grid { grid-template-columns: 1fr; gap: 30px; }
+}
